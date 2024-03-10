@@ -57,9 +57,9 @@ if solver.check() == sat:
     for i in range(22):
         flag.append(model[var[i]].as_long())
     print("Flag:", flag)
+
+    # to convert list of integers to string
+    new_flag = ''.join(list(map(lambda z:chr(z), list(flag))))
+    print("Flag:", new_flag)
 else:
     print("Constraints are unsatisfiable.")
-
-# to convert list of integers to string
-new_flag = ''.join(list(map(lambda z:chr(z), list(flag))))
-print("Flag:", new_flag)
