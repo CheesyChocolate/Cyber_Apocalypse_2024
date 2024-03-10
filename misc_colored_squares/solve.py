@@ -30,11 +30,11 @@ solver.add(var[3] - var[2] == 57)
 solver.add(var[17] - var[15] == var[18] + 1)
 
 # Add self-defined constraints to define 'HTB{' and '}' characters
-solver.add(var[0] == 72)
-solver.add(var[1] == 84)
-solver.add(var[2] == 66)
-solver.add(var[3] == 123)
-solver.add(var[21] == 125)
+solver.add(var[0] == ord('H'))
+solver.add(var[1] == ord('T'))
+solver.add(var[2] == ord('B'))
+solver.add(var[3] == ord('{'))
+solver.add(var[21] == ord('}'))
 
 # add other self-defined constraints to prevent the solver from finding other solutions
 solver.add(var[4] != 123)   # '{'
