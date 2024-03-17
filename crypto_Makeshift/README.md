@@ -11,5 +11,16 @@ combat.
 
 ## How to Play
 
+The challenge provides a [source.py](challenge/source.py) script that make use
+of string reverse and character shift to encode a message the flag. The file
+[output.txt](challenge/output.txt) contains the encoded message.
+
+To solve the challenge, we can easily reverse the encoding process to decode
+the message and obtain the flag. A example of the decoding is shown in
+[solve.py](solve.py).
 
 ## Flag
+
+```
+HTB{4_b3tTeR_w3apOn_i5_n3edeD!?!}
+```
